@@ -23,4 +23,4 @@ elif planet == 7:
 elif planet == 8:
   weight = weight * 1.19
 
-print("your weight:", weight)
+print("your weight is ", weight)
