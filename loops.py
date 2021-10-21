@@ -4,7 +4,11 @@ states_lows = [46.5, 67.4, 27.4, 36.1, 19.5]
 
 states_highs = [78.6, 72.2, 68, 71.4, 69.9]
 
-average_states_temp = [0]
-for temp in average_states_temp:
-    average_states_temp = states_lows + states_highs
-print(average_states_temp)
+state_temps = zip(states_lows, states_highs, states)
+list_states_temps = list(state_temps)
+
+for temp in list_states_temps[1][0]:
+    if temp <= 20:
+        print("Here is the lowest temp out of the five states")
+
+print(list_states_temps)
