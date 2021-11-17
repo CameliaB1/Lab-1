@@ -16,6 +16,6 @@ for time in tstamp:
 
 for change in crate:
     change = crate[0].text
-print("Current telsa stock prices is " + price.strip())
+print("Current tesla stock prices is " + price.strip())
 print("ROC of tesla stock prices is " + change.strip())
 print(time.strip())
