@@ -1,6 +1,6 @@
 import random
 rand_num = random.randint(1, 10)
-
+print("The positive statment of the day is: ")
 if rand_num == 1:
     print("You are doing great!")
 elif rand_num == 2:
