@@ -7,7 +7,7 @@ my_bot = ChatBot ('Kevin', storage_adapter = 'chatterbot.storage.SQLStorageAdapt
 
 trainer = ListTrainer(my_bot)
 #type in response for the bot below
-trainer.train([])
+trainer.train(['Hello, how is your day?', "Hi", 'Sup', "What are you doing?", "I\ 'm good"])
 
 c_trainer = ChatterBotCorpusTrainer(my_bot)
 c_trainer.train('chatterbot.corpus.english')
@@ -19,25 +19,5 @@ while True:
         print('Kevin: Have a good day!')
         break
     else:
-        response = my_bot.getresponse(request)
+        response = my_bot.get_response(request)
         print('Kevin: ', response)
-
-
-
-
-
-
-
-
-
-
-
-
-
-#talk = ['Hello, how is your day?', "Hi", 'Sup', "What are you doing?", "I\ 'm good"]
-
-
-#trainer = ListTrainer(bot)
-#for item in (talk):
-    #trainer.train(item)
-#print(bot.get_response("hi"))
