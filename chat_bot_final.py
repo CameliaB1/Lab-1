@@ -45,11 +45,13 @@ l_convo.train([
 ])
 
 l_convo.train([
-    'history facts', 
+    'history facts',
+    'Would you like to know history fact 4, 5, or 6?',
+    '4', 
     'Paul Revere never shoated "The British are coming!" during the revoultinay war. Would you like to here another?', 
-    'yeah', 
+    '5', 
     'Napoleon was once attacked by a horde of bunnies. Would you like to here another?',
-    'sure', 
+    '6', 
     'The owners of the Titanic never acually called in unsinkable. Would you like to here another?',
     'no',
     'What else would you like to talk about? I know some classic jokes, a few history facts, and interesting facts.',
